@@ -386,6 +386,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .stat-divider { width: 1px; height: 40px; background: var(--border); flex-shrink: 0; }
 .hero-buttons { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.hero-social {
+  display: flex; align-items: center; gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+.hero-social-link {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.hero-social-link:hover { color: var(--gold); border-color: var(--gold); }
+.hero-social-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-left: 0.25rem;
+}
 
 /* ===== TRUST BAR ===== */
 .trust-bar {
@@ -906,7 +928,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .tbh-name-row:hover .tbh-brand-name { color: var(--gold); }
 .tbh-stats { display: flex; gap: 2.5rem; }
-.tbh-stat { display: flex; flex-direction: column; gap: 0.25rem; }
+.tbh-stat { display: flex; flex-direction: column; gap: 0.25rem; transition: opacity 0.2s; cursor: pointer; }
+.tbh-stat:hover { opacity: 0.75; }
 .tbh-icon { font-size: 0.72rem; color: var(--gold); margin-bottom: 0.15rem; }
 .tbh-stat-num {
   font-family: var(--serif);
@@ -1031,7 +1054,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .alt-sep { color: var(--text-faint); font-size: 0.9rem; }
 
 /* ===== FOOTER ===== */
-.footer { background: var(--bg-2); border-top: 1px solid var(--border); padding: 3rem 0 2rem; }
+.footer { background: var(--bg-2); border-top: 1px solid var(--border); padding: 3rem 0 6rem; }
 .footer-inner {
   max-width: var(--max-w); margin: 0 auto; padding: 0 2rem;
   display: grid; grid-template-columns: auto 1fr auto auto;

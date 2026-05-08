@@ -124,50 +124,39 @@
   statNums.forEach(function (el) { counterObserver.observe(el); });
 
   /* ---------- LANGUAGE TOGGLE ---------- */
-  const langBtns = document.querySelectorAll('[data-lang-switch]');
   const htmlEl = document.documentElement;
 
-  function setLang(lang) {
+  window.setLang = function (lang) {
     htmlEl.setAttribute('lang', lang);
     htmlEl.setAttribute('data-lang', lang);
 
-    langBtns.forEach(function (btn) {
+    document.querySelectorAll('[data-lang-switch]').forEach(function (btn) {
       btn.classList.toggle('active', btn.dataset.langSwitch === lang);
     });
 
     document.querySelectorAll('[data-en][data-de]').forEach(function (el) {
-      const text = el.getAttribute('data-' + lang);
-      if (!text) return;
-      /* Preserve non-text child elements (icons etc.) — only update text nodes */
-      var elementChildren = Array.from(el.childNodes).filter(function (n) { return n.nodeType === 1; });
-      if (elementChildren.length) {
-        /* Rebuild: translated text + preserved element children */
-        el.textContent = text;
-        elementChildren.forEach(function (child) { el.appendChild(child); });
-      } else {
-        el.textContent = text;
-      }
+      var val = el.getAttribute('data-' + lang);
+      if (val) el.innerHTML = val;
     });
 
-    /* Update placeholders */
     document.querySelectorAll('[data-en-placeholder]').forEach(function (el) {
-      const ph = el.getAttribute('data-' + lang + '-placeholder');
+      var ph = el.getAttribute('data-' + lang + '-placeholder');
       if (ph) el.setAttribute('placeholder', ph);
     });
 
     try { localStorage.setItem('ms-lang', lang); } catch (e) {}
-  }
+  };
 
-  langBtns.forEach(function (btn) {
+  document.querySelectorAll('[data-lang-switch]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      setLang(btn.dataset.langSwitch);
+      window.setLang(btn.dataset.langSwitch);
     });
   });
 
   /* Restore saved lang */
   try {
-    const saved = localStorage.getItem('ms-lang');
-    if (saved === 'de') setLang('de');
+    var saved = localStorage.getItem('ms-lang');
+    if (saved) window.setLang(saved);
   } catch (e) {}
 
   /* ---------- SMOOTH SCROLL FOR ANCHOR LINKS ---------- */
