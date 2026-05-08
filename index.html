@@ -637,6 +637,28 @@
     </div>
 </footer>
 
+<script>
+function setLang(lang) {
+  document.documentElement.setAttribute('lang', lang);
+  document.documentElement.setAttribute('data-lang', lang);
+  document.querySelectorAll('[data-lang-switch]').forEach(function(btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-lang-switch') === lang);
+  });
+  document.querySelectorAll('[data-en][data-de]').forEach(function(el) {
+    var val = el.getAttribute('data-' + lang);
+    if (val) el.innerHTML = val;
+  });
+  document.querySelectorAll('[data-en-placeholder]').forEach(function(el) {
+    var ph = el.getAttribute('data-' + lang + '-placeholder');
+    if (ph) el.setAttribute('placeholder', ph);
+  });
+  try { localStorage.setItem('ms-lang', lang); } catch(e) {}
+}
+try {
+  var _l = localStorage.getItem('ms-lang');
+  if (_l) setLang(_l);
+} catch(e) {}
+</script>
 <script src="js/main.js?v=5"></script>
 </body>
 </html>
