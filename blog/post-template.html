@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <!--
   ╔══════════════════════════════════════════════════════════════╗
-  ║  MARCO SAGER BLOG — POST TEMPLATE                           ║
-  ║  Copy this file and rename it for each new post.            ║
-  ║  Search for "EDIT:" comments to find every field to update. ║
+  ║  MARCO SAGER BLOG — POST TEMPLATE (BLANK)                   ║
+  ║  1. Copy + rename this file: blog/your-post-slug.html       ║
+  ║  2. Find every "EDIT:" comment and replace the values       ║
+  ║  3. Write EN content in the tag body                        ║
+  ║  4. Write DE content in the data-de="" attribute            ║
   ╚══════════════════════════════════════════════════════════════╝
 -->
 <html lang="en" data-lang="en">
@@ -11,52 +13,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- EDIT: title → format: "[EN Post Title] | Marco Sager" -->
-    <title>The Nominee Trap: How a German Lost His Company in Thailand | Marco Sager</title>
+    <!-- EDIT: "[EN Post Title] | Marco Sager" -->
+    <title>Post Title | Marco Sager</title>
 
-    <!-- EDIT: meta description → 120–160 chars, EN -->
-    <meta name="description" content="A German entrepreneur trusted a local nominee with 51% of his Thai company. Three years later, the nominee disappeared with everything. Here is what went wrong.">
+    <!-- EDIT: 120–160 chars, EN -->
+    <meta name="description" content="Post meta description.">
 
-    <!-- EDIT: keywords → 5–8 relevant keywords -->
-    <meta name="keywords" content="nominee shareholder Thailand, Thai company structure, foreigner business Thailand, how to set up company Thailand, Thailand business mistakes">
+    <!-- EDIT: 5–8 comma-separated keywords -->
+    <meta name="keywords" content="keyword one, keyword two, Thailand business">
 
     <meta name="author" content="Marco Sager">
     <meta name="robots" content="index, follow">
 
-    <!-- EDIT: canonical → full URL of this post -->
-    <link rel="canonical" href="https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html">
+    <!-- EDIT: full URL of this post -->
+    <link rel="canonical" href="https://www.marcosager.com/blog/your-post-slug.html">
 
-    <!-- EDIT: OG title, description, image -->
+    <!-- EDIT: og:url, og:title, og:description -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html">
-    <meta property="og:title" content='The "Trusted Friend" Who Owned His Business'>
-    <meta property="og:description" content="51% nominee. 3 years. €340,000 gone. The cautionary tale every German investor in Thailand must read.">
+    <meta property="og:url" content="https://www.marcosager.com/blog/your-post-slug.html">
+    <meta property="og:title" content="Post Title">
+    <meta property="og:description" content="Post OG description.">
     <meta property="og:image" content="https://www.marcosager.com/assets/marco.png">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="de_DE">
     <meta property="og:site_name" content="Marco Sager Consulting">
 
-    <!-- EDIT: Twitter card title, description -->
+    <!-- EDIT: twitter:title, twitter:description -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content='The "Trusted Friend" Who Owned His Business'>
-    <meta name="twitter:description" content="51% nominee. 3 years. €340,000 gone. The Thailand business mistake you cannot afford to make.">
+    <meta name="twitter:title" content="Post Title">
+    <meta name="twitter:description" content="Post Twitter description.">
     <meta name="twitter:image" content="https://www.marcosager.com/assets/marco.png">
 
-    <!-- EDIT: hreflang → same URL for both (bilingual page) -->
-    <link rel="alternate" hreflang="en" href="https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html">
-    <link rel="alternate" hreflang="de" href="https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html">
+    <!-- EDIT: both href URLs -->
+    <link rel="alternate" hreflang="en" href="https://www.marcosager.com/blog/your-post-slug.html">
+    <link rel="alternate" hreflang="de" href="https://www.marcosager.com/blog/your-post-slug.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.marcosager.com/blog/your-post-slug.html">
 
-    <!-- EDIT: Article schema → datePublished, dateModified, headline, description, keywords, url -->
+    <!-- EDIT: headline, description, datePublished, dateModified, keywords, @id -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "The Nominee Trap: How a German Lost His Company in Thailand",
-      "description": "A German entrepreneur trusted a local nominee with 51% of his Thai company. Three years later, the nominee disappeared with everything.",
+      "headline": "Post Title",
+      "description": "Post description.",
       "image": "https://www.marcosager.com/assets/marco.png",
-      "datePublished": "2025-05-01",
-      "dateModified": "2025-05-01",
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-01-01",
       "author": {
         "@type": "Person",
         "name": "Marco Sager",
@@ -65,18 +67,15 @@
       "publisher": {
         "@type": "Organization",
         "name": "Marco Sager Consulting",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.marcosager.com/assets/marco-logo.png"
-        }
+        "logo": { "@type": "ImageObject", "url": "https://www.marcosager.com/assets/marco-logo.png" }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html"
+        "@id": "https://www.marcosager.com/blog/your-post-slug.html"
       },
-      "keywords": ["nominee shareholder Thailand", "Thai company structure", "foreigner business Thailand"],
+      "keywords": ["keyword one", "keyword two"],
       "inLanguage": ["en", "de"],
-      "url": "https://www.marcosager.com/blog/fehler-01-nominee-shareholder.html"
+      "url": "https://www.marcosager.com/blog/your-post-slug.html"
     }
     </script>
 
@@ -95,8 +94,6 @@
 <body>
 
 <div class="grain-overlay" aria-hidden="true"></div>
-
-<!-- Reading Progress Bar (JS fills width) -->
 <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
 
 <!-- Sticky Bottom Bar -->
@@ -114,7 +111,7 @@
     </div>
 </div>
 
-<!-- ===================== NAV ===================== -->
+<!-- NAV -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <a href="../index.html" class="nav-logo">
@@ -125,7 +122,6 @@
                 <span class="logo-sub">Consulting</span>
             </div>
         </a>
-
         <div class="nav-menu" id="navMenu">
             <a href="../index.html#services" class="nav-link" data-en="Services" data-de="Leistungen">Services</a>
             <a href="../index.html#story" class="nav-link" data-en="Story" data-de="Geschichte">Story</a>
@@ -134,7 +130,6 @@
             <a href="index.html" class="nav-link" data-en="Blog" data-de="Blog">Blog</a>
             <a href="../index.html#contact" class="nav-link" data-en="Contact" data-de="Kontakt">Contact</a>
         </div>
-
         <div class="nav-right">
             <div class="lang-toggle">
                 <button class="lang-btn active" data-lang-switch="en" onclick="setLang('en')">EN</button>
@@ -143,43 +138,40 @@
             </div>
             <a href="../index.html#contact" class="btn-book" data-en="Book a Call" data-de="Gespräch buchen">Book a Call</a>
         </div>
-
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
 
-<!-- ===================== ARTICLE HERO ===================== -->
+<!-- ARTICLE HERO -->
 <header class="article-hero">
     <div class="article-hero-inner">
 
-        <!-- Breadcrumb -->
         <nav class="article-breadcrumb" aria-label="breadcrumb">
             <a href="../index.html" data-en="Home" data-de="Startseite">Home</a>
             <span class="breadcrumb-sep">›</span>
             <a href="index.html" data-en="Blog" data-de="Blog">Blog</a>
             <span class="breadcrumb-sep">›</span>
-            <!-- EDIT: category name in both languages -->
-            <span data-en="Mistake of the Week" data-de="Fehler der Woche">Mistake of the Week</span>
+            <!-- EDIT: category in EN / DE -->
+            <span data-en="Category" data-de="Kategorie">Category</span>
         </nav>
 
-        <!-- EDIT: category tag (matches filter pill data-filter value) -->
-        <span class="article-tag" data-en="Mistake of the Week · #01" data-de="Fehler der Woche · #01">Mistake of the Week · #01</span>
+        <!-- EDIT: tag label (e.g. "Mistake of the Week · #02") -->
+        <span class="article-tag" data-en="Category · #00" data-de="Kategorie · #00">Category · #00</span>
 
-        <!-- EDIT: article title in EN and DE -->
-        <h1 class="article-title" data-en='The "Trusted Friend" Who Owned His Business' data-de='Der "treue Freund", der sein Unternehmen besaß'>The "Trusted Friend" Who Owned His Business</h1>
+        <!-- EDIT: headline in EN / DE -->
+        <h1 class="article-title" data-en="Post Title in English" data-de="Beitragstitel auf Deutsch">Post Title in English</h1>
 
-        <!-- Article meta row -->
         <div class="article-meta">
             <img src="../assets/marco.png" alt="Marco Sager" class="article-meta-photo">
             <div class="article-meta-info">
                 <span class="article-meta-author">Marco Sager</span>
                 <!-- EDIT: date and read time -->
                 <span class="article-meta-date">
-                    <span data-en="May 1, 2025" data-de="1. Mai 2025">May 1, 2025</span>
+                    <span data-en="Month Day, Year" data-de="Tag. Monat Jahr">Month Day, Year</span>
                     &nbsp;·&nbsp;
-                    <span data-en="6 min read" data-de="6 Min. Lesezeit">6 min read</span>
+                    <span data-en="X min read" data-de="X Min. Lesezeit">X min read</span>
                 </span>
             </div>
         </div>
@@ -187,82 +179,65 @@
     </div>
 </header>
 
-<!-- ===================== ARTICLE BODY ===================== -->
+<!-- ARTICLE BODY -->
 <main class="article-main" id="articleMain">
     <div class="article-body">
 
         <!--
-        ══════════════════════════════════════════════════
-        HOW TO WRITE YOUR POST CONTENT:
+        WRITING GUIDE
+        ═══════════════════════════════════════════════
+        Every element: write EN text in the tag body.
+                        write DE text in data-de="".
 
-        Structure each section as:
-          <p data-en="EN text" data-de="DE text">EN text</p>
-          <h2 data-en="EN heading" data-de="DE heading">EN heading</h2>
+        <p data-en="EN text" data-de="DE text">EN text</p>
+        <h2 data-en="EN heading" data-de="DE heading">EN heading</h2>
 
-        For paragraphs with HTML inside (bold, italic):
-          Write EN version directly in the tag body.
-          Add data-en and data-de as plain text for
-          the setLang() swap (or use nested spans — see below).
-
-        Use .highlight-box for key facts.
-        Use .article-loss for the loss amount.
-        Use blockquote for direct quotes.
-        ══════════════════════════════════════════════════
+        Special blocks:
+          .highlight-box  → key fact or warning
+          .article-loss   → loss amount (Fehler posts)
+          blockquote      → direct quote
+        ═══════════════════════════════════════════════
         -->
 
-        <!-- EDIT: opening paragraph — hook the reader with the story -->
-        <p data-en="He built a restaurant in Chiang Mai. Poured 18 months of savings into it. Hired a Thai partner he had known for years — a &ldquo;trusted friend&rdquo; — and gave him 51% of the shares, as Thai law requires for foreign-majority businesses. Then one day his friend stopped answering the phone." data-de="Er baute ein Restaurant in Chiang Mai. Steckte 18 Monate Ersparnisse hinein. Engagierte einen Thai-Partner, den er jahrelang kannte — einen &ldquo;treuen Freund&rdquo; — und gab ihm 51 % der Anteile, wie es das Thai-Recht für ausländisch dominierte Unternehmen vorschreibt. Dann hörte sein Freund eines Tages auf, ans Telefon zu gehen.">He built a restaurant in Chiang Mai. Poured 18 months of savings into it. Hired a Thai partner he had known for years — a &ldquo;trusted friend&rdquo; — and gave him 51% of the shares, as Thai law requires for foreign-majority businesses. Then one day his friend stopped answering the phone.</p>
+        <!-- EDIT: opening paragraph — hook the reader -->
+        <p data-en="Opening paragraph in English." data-de="Eröffnungsabsatz auf Deutsch.">Opening paragraph in English.</p>
 
-        <!-- EDIT: loss stat box — put the hard number here -->
+        <!-- Optional: loss stat box (for Fehler der Woche posts) -->
+        <!-- REMOVE this block if not a loss story -->
         <div class="article-loss">
             <div class="article-loss-label" data-en="Total Loss" data-de="Gesamtverlust">Total Loss</div>
             <!-- EDIT: the amount -->
-            <div class="article-loss-amount">€340,000</div>
-            <div class="article-loss-context" data-en="Restaurant + inventory + 3 years of unpaid wages. Impossible to recover under Thai law." data-de="Restaurant + Inventar + 3 Jahre nicht ausgezahlte Löhne. Nach Thai-Recht nicht wiederzuerlangen.">Restaurant + inventory + 3 years of unpaid wages. Impossible to recover under Thai law.</div>
+            <div class="article-loss-amount">€000,000</div>
+            <div class="article-loss-context" data-en="Brief context in English." data-de="Kurzer Kontext auf Deutsch.">Brief context in English.</div>
         </div>
 
         <!-- EDIT: section heading -->
-        <h2 data-en="What Is a Nominee Shareholder?" data-de="Was ist ein Nominee-Aktionär?">What Is a Nominee Shareholder?</h2>
+        <h2 data-en="Section Heading" data-de="Abschnittsüberschrift">Section Heading</h2>
 
-        <!-- EDIT: body paragraphs -->
-        <p data-en="Under the Foreign Business Act, most business sectors in Thailand require at least 51% Thai ownership. Foreigners wanting full control often get around this by using a &ldquo;nominee&rdquo; — a Thai national who holds shares on paper but transfers any real economic benefit back to the foreigner through a side agreement." data-de="Nach dem Foreign Business Act erfordern die meisten Geschäftsbereiche in Thailand mindestens 51 % Thai-Eigentümerschaft. Ausländer, die die volle Kontrolle wollen, umgehen dies oft durch einen &ldquo;Nominee&rdquo; — ein Thai-Staatsangehöriger, der Anteile auf dem Papier hält, aber jeden wirtschaftlichen Nutzen durch eine Nebenvereinbarung an den Ausländer zurückgibt.">Under the Foreign Business Act, most business sectors in Thailand require at least 51% Thai ownership. Foreigners wanting full control often get around this by using a &ldquo;nominee&rdquo; — a Thai national who holds shares on paper but transfers any real economic benefit back to the foreigner through a side agreement.</p>
+        <!-- EDIT: body paragraphs — repeat as needed -->
+        <p data-en="Body paragraph." data-de="Absatz auf Deutsch.">Body paragraph.</p>
 
-        <p data-en="The problem: those side agreements are not enforceable in Thai court. They are void. The nominee legally owns the shares. If they want to exercise that ownership, they can." data-de="Das Problem: Diese Nebenvereinbarungen sind vor einem Thai-Gericht nicht durchsetzbar. Sie sind nichtig. Der Nominee besitzt die Anteile rechtlich. Wenn er dieses Eigentum ausüben möchte, kann er das.">The problem: those side agreements are not enforceable in Thai court. They are void. The nominee legally owns the shares. If they want to exercise that ownership, they can.</p>
-
-        <!-- EDIT: highlight box — a key fact or statistic -->
+        <!-- Optional: highlight box -->
         <div class="highlight-box">
-            <p data-en="&ldquo;Nominee arrangements&rdquo; also violate the Foreign Business Act. Both parties can face criminal charges — not just civil ones. The foreigner loses the company. The nominee faces fines or imprisonment." data-de="&ldquo;Nominee-Vereinbarungen&rdquo; verstoßen auch gegen den Foreign Business Act. Beide Parteien können strafrechtlich verfolgt werden — nicht nur zivilrechtlich. Der Ausländer verliert das Unternehmen. Der Nominee riskiert Bußgelder oder Gefängnis.">&ldquo;Nominee arrangements&rdquo; also violate the Foreign Business Act. Both parties can face criminal charges — not just civil ones. The foreigner loses the company. The nominee faces fines or imprisonment.</p>
+            <p data-en="Key fact or warning in English." data-de="Schlüsselfakt oder Warnung auf Deutsch.">Key fact or warning in English.</p>
         </div>
 
-        <h2 data-en="How This Story Ended" data-de="Wie diese Geschichte endete">How This Story Ended</h2>
+        <!-- Optional: pull quote -->
+        <blockquote data-en="&ldquo;Direct quote here.&rdquo;" data-de="&ldquo;Direktes Zitat hier.&rdquo;">&ldquo;Direct quote here.&rdquo;</blockquote>
 
-        <p data-en="The nominee filed paperwork removing the German from the company. Under Thai corporate law, the majority shareholder can do this. By the time the German found a Thai lawyer who understood the situation, the restaurant had been sold to a third party. The proceeds went to the nominee." data-de="Der Nominee reichte Unterlagen ein, die den Deutschen aus dem Unternehmen entfernten. Nach Thai-Gesellschaftsrecht kann der Mehrheitsaktionär dies tun. Als der Deutsche einen Thai-Anwalt fand, der die Situation verstand, war das Restaurant an einen Dritten verkauft worden. Der Erlös ging an den Nominee.">The nominee filed paperwork removing the German from the company. Under Thai corporate law, the majority shareholder can do this. By the time the German found a Thai lawyer who understood the situation, the restaurant had been sold to a third party. The proceeds went to the nominee.</p>
-
-        <!-- EDIT: pull quote -->
-        <blockquote data-en="&ldquo;I thought I was being smart. I had known him for six years. We had been to his family home. My lawyer told me this was the normal way to do it in Thailand.&rdquo;" data-de="&ldquo;Ich dachte, ich wäre clever. Ich kannte ihn seit sechs Jahren. Wir waren in seinem Elternhaus. Mein Anwalt sagte mir, das sei die normale Vorgehensweise in Thailand.&rdquo;">&ldquo;I thought I was being smart. I had known him for six years. We had been to his family home. My lawyer told me this was the normal way to do it in Thailand.&rdquo;</blockquote>
-
-        <h2 data-en="The Legal Alternatives That Actually Work" data-de="Die rechtlichen Alternativen, die wirklich funktionieren">The Legal Alternatives That Actually Work</h2>
-
-        <p data-en="Thailand does have legal paths to majority or full foreign ownership in many sectors. The most commonly missed ones:" data-de="Thailand hat legale Wege zur Mehrheits- oder vollständigen Auslandseignerschaft in vielen Sektoren. Die am häufigsten übersehenen:">Thailand does have legal paths to majority or full foreign ownership in many sectors. The most commonly missed ones:</p>
-
-        <!-- EDIT: unordered list -->
+        <!-- Optional: bullet list -->
         <ul>
-            <li data-en="<strong>BOI Promotion</strong> — Thailand's Board of Investment grants 100% foreign ownership in promoted industries (manufacturing, tech, logistics, select services)." data-de="<strong>BOI-Förderung</strong> — Thailands Board of Investment gewährt 100 % Auslandseigentum in geförderten Industrien (Produktion, Technologie, Logistik, ausgewählte Dienstleistungen)."><strong>BOI Promotion</strong> — Thailand's Board of Investment grants 100% foreign ownership in promoted industries (manufacturing, tech, logistics, select services).</li>
-            <li data-en="<strong>Treaty of Amity</strong> — US citizens can own majority stakes in most sectors under a bilateral 1968 treaty. Often forgotten." data-de="<strong>Treaty of Amity</strong> — US-Bürger können nach einem bilateralen Abkommen von 1968 Mehrheitsbeteiligungen in den meisten Sektoren halten. Oft vergessen."><strong>Treaty of Amity</strong> — US citizens can own majority stakes in most sectors under a bilateral 1968 treaty. Often forgotten.</li>
-            <li data-en="<strong>Foreign Business License (FBL)</strong> — Obtainable for many service businesses. Slower, but legal." data-de="<strong>Foreign Business License (FBL)</strong> — Für viele Dienstleistungsunternehmen erhältlich. Langsamer, aber legal."><strong>Foreign Business License (FBL)</strong> — Obtainable for many service businesses. Slower, but legal.</li>
-            <li data-en="<strong>Preference shares</strong> — Structuring share classes so the foreign minority holder retains voting control even with a smaller economic stake." data-de="<strong>Vorzugsaktien</strong> — Strukturierung von Anteilsklassen, sodass der ausländische Minderheitsinhaber die Stimmrechtskontrolle behält, auch bei einem kleineren Wirtschaftsanteil."><strong>Preference shares</strong> — Structuring share classes so the foreign minority holder retains voting control even with a smaller economic stake.</li>
+            <li data-en="<strong>Item one</strong> — description." data-de="<strong>Punkt eins</strong> — Beschreibung."><strong>Item one</strong> — description.</li>
+            <li data-en="<strong>Item two</strong> — description." data-de="<strong>Punkt zwei</strong> — Beschreibung."><strong>Item two</strong> — description.</li>
         </ul>
 
-        <!-- EDIT: the lesson — always end with this -->
+        <!-- EDIT: lesson / conclusion -->
         <h2 data-en="Die Lektion / The Lesson" data-de="Die Lektion / The Lesson">Die Lektion / The Lesson</h2>
+        <p data-en="Conclusion paragraph." data-de="Schlussabsatz.">Conclusion paragraph.</p>
 
-        <p data-en="No relationship survives a financial betrayal. You cannot friendship your way out of a Thai legal dispute. If the structure you are using relies on trust rather than law, you do not have a structure — you have a gamble." data-de="Keine Beziehung übersteht einen finanziellen Verrat. Man kann sich nicht durch Freundschaft aus einem Thai-Rechtsstreit herausreden. Wenn die Struktur, die Sie verwenden, auf Vertrauen statt auf dem Gesetz basiert, haben Sie keine Struktur — Sie haben einen Glücksspiel.">No relationship survives a financial betrayal. You cannot friendship your way out of a Thai legal dispute. If the structure you are using relies on trust rather than law, you do not have a structure — you have a gamble.</p>
+    </div>
 
-        <p data-en="Before you register a company, open a restaurant, or sign any agreement with a Thai national as majority shareholder — talk to an advisor who has seen what happens when it goes wrong. The consultation costs almost nothing. The mistake costs everything." data-de="Bevor Sie ein Unternehmen registrieren, ein Restaurant eröffnen oder einen Vertrag mit einem Thai-Staatsangehörigen als Mehrheitsaktionär unterzeichnen — sprechen Sie mit einem Berater, der gesehen hat, was passiert, wenn es schiefgeht. Die Beratung kostet fast nichts. Der Fehler kostet alles.">Before you register a company, open a restaurant, or sign any agreement with a Thai national as majority shareholder — talk to an advisor who has seen what happens when it goes wrong. The consultation costs almost nothing. The mistake costs everything.</p>
-
-    </div><!-- /article-body -->
-
-    <!-- ===================== AUTHOR BIO ===================== -->
+    <!-- AUTHOR BIO -->
     <div class="article-author-card">
         <img src="../assets/marco.png" alt="Marco Sager" class="article-author-photo">
         <div class="article-author-info">
@@ -272,22 +247,21 @@
         </div>
     </div>
 
-    <!-- ===================== CTA BOX ===================== -->
+    <!-- CTA BOX -->
     <div class="article-cta-box">
-        <p class="article-cta-eyebrow" data-en="NOT SURE ABOUT YOUR STRUCTURE?" data-de="UNSICHER ÜBER IHRE STRUKTUR?">NOT SURE ABOUT YOUR STRUCTURE?</p>
+        <p class="article-cta-eyebrow" data-en="QUESTIONS ABOUT YOUR SITUATION?" data-de="FRAGEN ZU IHRER SITUATION?">QUESTIONS ABOUT YOUR SITUATION?</p>
         <h3 class="article-cta-title" data-en="Book a Free 30-Minute Consultation" data-de="Kostenlose 30-Minuten-Erstberatung buchen">Book a Free 30-Minute Consultation</h3>
         <p class="article-cta-text" data-en="Tell me about your situation. I will tell you honestly whether your current setup is safe — and if not, what the correct path looks like." data-de="Erzählen Sie mir von Ihrer Situation. Ich sage Ihnen ehrlich, ob Ihr aktuelles Setup sicher ist — und wenn nicht, wie der richtige Weg aussieht.">Tell me about your situation. I will tell you honestly whether your current setup is safe — and if not, what the correct path looks like.</p>
         <a href="../index.html#contact" class="article-cta-btn" data-en="Book a Call — It's Free" data-de="Gespräch buchen — kostenlos">Book a Call — It's Free</a>
     </div>
 
-    <!-- ===================== BACK TO BLOG ===================== -->
     <div style="text-align:center; padding: 3rem 0 5rem;">
         <a href="index.html" class="back-link" data-en="← Back to all posts" data-de="← Zurück zu allen Beiträgen">← Back to all posts</a>
     </div>
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
+<!-- FOOTER -->
 <footer class="footer">
     <div class="footer-inner">
         <div class="footer-brand">
@@ -347,37 +321,24 @@ try {
   if (_l) setLang(_l);
 } catch(e) {}
 </script>
-
 <script>
-// Reading progress bar
 var progress = document.getElementById('readingProgress');
 var article = document.getElementById('articleMain');
 function updateProgress() {
   if (!progress || !article) return;
   var rect = article.getBoundingClientRect();
   var total = article.offsetHeight - window.innerHeight;
-  var scrolled = -rect.top;
-  var pct = Math.min(100, Math.max(0, (scrolled / total) * 100));
+  var pct = Math.min(100, Math.max(0, (-rect.top / total) * 100));
   progress.style.width = pct + '%';
 }
 window.addEventListener('scroll', updateProgress, { passive: true });
 updateProgress();
-
-// Navbar scroll
 var navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function() {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
-
-// WhatsApp bar close
 var waBarClose = document.getElementById('waBarClose');
-if (waBarClose) {
-  waBarClose.addEventListener('click', function() {
-    document.getElementById('waBar').style.display = 'none';
-  });
-}
-
-// Hamburger
+if (waBarClose) waBarClose.addEventListener('click', function() { document.getElementById('waBar').style.display = 'none'; });
 var hamburger = document.getElementById('hamburger');
 var navMenu = document.getElementById('navMenu');
 if (hamburger && navMenu) {
