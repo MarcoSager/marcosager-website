@@ -248,6 +248,7 @@
             ? 'Vielen Dank — ich melde mich innerhalb von 24 Stunden.'
             : 'Thank you — I\'ll be in touch within 24 hours.') +
           '</p></div>';
+        window.open('https://calendly.com/dreamkeymedia/new-meeting-1', '_blank');
       }, 900);
     });
   }
